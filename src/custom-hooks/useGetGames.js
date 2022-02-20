@@ -11,7 +11,7 @@ const useGetGames = () => {
     async function getGames() {
         try {
             const response = await axios.get(
-                "http://localhost:8001/api/games/"
+                "https://server-final-project-node.herokuapp.com/api/games/"
             );
             console.log(response.data);
             setGames(response.data);

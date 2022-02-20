@@ -20,7 +20,7 @@ const useGetDetailsGame = () => {
   }, []);
 
   const getDetailsGame = (game_id) => {
-    fetch('http://localhost:8001/api/game/detailsGame/' + game_id)
+    fetch('https://server-final-project-node.herokuapp.com/api/game/detailsGame/' + game_id)
       .then((res) => res.json())
       .then((data) => {
         setDoneFetchGameDetail(true);
@@ -30,7 +30,7 @@ const useGetDetailsGame = () => {
   };
 
   const getPlatforms = () => {
-    fetch("http://localhost:8001/api/platform/getPlatforms")
+    fetch("https://server-final-project-node.herokuapp.com/api/platform/getPlatforms")
       .then((res) => res.json())
       .then((data) => {
         setPlatformGame(data);
@@ -39,7 +39,7 @@ const useGetDetailsGame = () => {
   };
 
   const getGenres = () => {
-    fetch("http://localhost:8001/api/genre/getGenre")
+    fetch("https://server-final-project-node.herokuapp.com/api/genre/getGenre")
       .then((res) => res.json())
       .then((data) => {
         setGenreGame(data);
