@@ -13,7 +13,9 @@ const Game = (props) => {
   return (
     <div className="col-md-4 box-games">
       <div className="work-item">
-        <img className="img-responsive img-games" src={mainImage} alt="" />
+        <Link to={`/game/${slug}`}>
+          <img className="img-responsive img-games" src={mainImage} alt="" />
+        </Link>
         <h3>
           <Link to={`/game/${slug}`}>{title}</Link>
         </h3>
