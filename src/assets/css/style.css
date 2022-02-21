@@ -234,9 +234,9 @@ header .navbar-brand img {
   background-repeat: no-repeat;
 }
 
-.boxDescription {
+/* .boxDescription {
   padding: 0;
-}
+} */
 
 .specs {
   text-align: left;
@@ -433,6 +433,12 @@ footer .copy-right {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
+
+.img-games{
+  width: 360px;
+  height: 202px !important;
+}
+
 
 @-webkit-keyframes dotted-spin {
   0% {
